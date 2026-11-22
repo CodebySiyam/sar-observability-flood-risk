@@ -1,0 +1,6 @@
+Config,Labels,Features,CV,N_Rows,Prevalence,ROC_AUC,PR_AUC,ROC_AUC_Observable_Only
+1_Naive_Random,Flooded_Event_Raw_v01,Elevation_Mean_m+Slope_Mean_deg+Distance_to_River_m+Tree_Fraction+NDVI_Mean,random,457251,0.04487250984688935,0.9225818178187293,0.31762725694552285,0.7586005511485765
+2_Naive_Block,Flooded_Event_Raw_v01,Elevation_Mean_m+Slope_Mean_deg+Distance_to_River_m+Tree_Fraction+NDVI_Mean,block,457251,0.04487250984688935,0.9057900727775822,0.23736051427902213,0.7045516518539119
+3_Honest_Random,Flooded_Event,Elevation_Mean_m+Slope_Mean_deg+Distance_to_River_m+Cropland_Fraction,random,148719,0.13368836530638317,0.7407540034219936,0.29853501459699117,
+4_Honest_Block,Flooded_Event,Elevation_Mean_m+Slope_Mean_deg+Distance_to_River_m+Cropland_Fraction,block,148719,0.13368836530638317,0.7021731531465218,0.2553492330870979,
+5_Honest_Block_Plus_Pop,Flooded_Event,Elevation_Mean_m+Slope_Mean_deg+Distance_to_River_m+Cropland_Fraction+Population_Count,block,148719,0.13368836530638317,0.7032726802049678,0.25699796630693605,

@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "n_boot": 5000,
+  "n_upazila": 23,
+  "nawg_variable": "Impact of Crisis",
+  "model_variable": "population-weighted mid-rank hazard percentile",
+  "diff": {
+    "Diff_v03_minus_v02": 0.2685559770235758,
+    "CI95_Low": -0.04535295625377519,
+    "CI95_High": 0.6351661726987038
+  },
+  "partial_spearman_pop": {
+    "v03": -0.36524171416750567,
+    "v02": -0.62934891997664
+  },
+  "supportive": false,
+  "clearly_better": false
+}

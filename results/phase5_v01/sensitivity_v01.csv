@@ -1,0 +1,9 @@
+Scenario,Spearman_vs_Default,Top10_Overlap_Pct,Top10_Pop_k
+"Default (equal H, rank, multiplicative)",1.0,100.0,1460.6
+H weights flood 0.5 / wind 0.25 / tide 0.25,0.997,93.0,1414.2
+H = flood ML only,0.957,75.1,1301.3
+H = flood + wind (no storm tide),0.977,79.0,1497.1
+V weights poverty 0.75 / access 0.25,0.986,83.5,1524.9
+Aggregation additive (H+E+V)/3,0.945,91.1,1573.7
+Normalisation min-max,0.892,56.5,2397.5
+Cropland-free flood hazard,0.996,89.0,1488.4

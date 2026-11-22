@@ -1,0 +1,37 @@
+{
+ "H_weights_flood_wind_tide": [
+  0.3333333333333333,
+  0.3333333333333333,
+  0.3333333333333333
+ ],
+ "V_weight_poverty": 0.5,
+ "normalisation": "mid-rank percentile",
+ "aggregation": "H*E*V",
+ "E_zero_rule": "E=0 where population and buildings are both 0",
+ "n_mc": 200,
+ "seed": 42,
+ "slr_source": "IPCC AR6 global mean SLR, rel. 1995-2014 (median, likely range)",
+ "slr_m": {
+  "SSP245_2050": [
+   0.2,
+   0.17,
+   0.26
+  ],
+  "SSP585_2050": [
+   0.23,
+   0.2,
+   0.29
+  ],
+  "SSP245_2100": [
+   0.56,
+   0.44,
+   0.76
+  ],
+  "SSP585_2100": [
+   0.77,
+   0.63,
+   1.01
+  ]
+ },
+ "ssp_note": "flood ML hazard, E and V held at present; only storm-tide exceedance changes"
+}

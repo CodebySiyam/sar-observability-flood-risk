@@ -1,0 +1,50 @@
+{
+ "version": "v03_final",
+ "date": "2026-10-29",
+ "features": [
+  "Elevation_Mean_m",
+  "Slope_Mean_deg",
+  "Distance_to_River_m",
+  "Cropland_Fraction"
+ ],
+ "target": "Flooded_Event",
+ "label_file": "Label_Flooded_Event_v02.csv",
+ "mask_file": "Observability_Mask_v01.csv",
+ "weak_label_policy": "keep",
+ "observability": "Tree_Fraction < 0.3 and Mangrove_Fraction_GMW <= 0.1",
+ "cv": "StratifiedGroupKFold 5 folds, 15000 m blocks, seed 42",
+ "n_train_rows": 148719,
+ "n_train_cells": 49573,
+ "rf_params": {
+  "n_estimators": 500,
+  "min_samples_leaf": 20,
+  "max_features": 2,
+  "n_jobs": -1,
+  "random_state": 42
+ },
+ "lgbm_params": {
+  "n_estimators": 500,
+  "learning_rate": 0.03,
+  "num_leaves": 31,
+  "min_child_samples": 50,
+  "subsample": 0.8,
+  "subsample_freq": 1,
+  "random_state": 42,
+  "n_jobs": -1,
+  "verbose": -1
+ },
+ "fr_bins": 10,
+ "aoa": {
+  "weights": {
+   "Elevation_Mean_m": 0.2575,
+   "Slope_Mean_deg": 0.1614,
+   "Distance_to_River_m": 0.1692,
+   "Cropland_Fraction": 0.4119
+  },
+  "dbar": 0.6173818371957418,
+  "threshold": 0.11373345024308099,
+  "rule": "Q3 + 1.5 IQR of CV dissimilarity index"
+ },
+ "n_boot": 500,
+ "feature_tests": "Rel_Elev, Embankment, Waterway, HAND/TWI tested and not adopted (see f2/f3 files)"
+}

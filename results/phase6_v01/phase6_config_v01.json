@@ -1,0 +1,40 @@
+{
+  "MONITOR_PCT": 80.0,
+  "UNDER_PRED_RATIO": 1.5,
+  "OVER_PRED_RATIO": 0.6666666666666666,
+  "DRIVER_STABLE_PCT": 80.0,
+  "ACCESS_GAP_AC": 0.25,
+  "HIDDEN_V02_MAX": 0.2,
+  "HIDDEN_V03_MIN": 0.6,
+  "SD_MEDIAN_PCT": 5.3481477,
+  "N_TOP": 16088,
+  "PCT_CONVENTION": "mid",
+  "MEASURES": {
+    "Elevation_Mean_m": [
+      "Terrain elevation",
+      "Structural",
+      "Raised homestead plinths; flood/cyclone shelters; embankment height and maintenance"
+    ],
+    "Distance_to_River_m": [
+      "River proximity",
+      "Structural + nature-based",
+      "Riverbank protection and embankment repair; vegetated riverbank buffers"
+    ],
+    "Slope_Mean_deg": [
+      "Flat terrain / drainage",
+      "Structural",
+      "Drainage canal re-excavation; sluice-gate maintenance"
+    ],
+    "Cropland_Fraction": [
+      "Cropland setting (lower confidence)",
+      "Agricultural",
+      "Flood- and salinity-tolerant crop varieties; agricultural early warning"
+    ],
+    "None": [
+      "No hazard-increasing driver",
+      "Social / access",
+      "Risk driven by exposure and vulnerability: early warning, evacuation planning, social protection"
+    ]
+  },
+  "ACCESS_MEASURE": "Access: shelter capacity and all-weather road links to health facilities"
+}
